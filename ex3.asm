@@ -55,6 +55,6 @@ out dx,al
 dec si
 mov	al,90h
 out	40h,AL
-mov	al,00
+mov	al,01h
 out	40h,AL
 tt:iret
