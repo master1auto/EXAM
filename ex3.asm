@@ -46,7 +46,7 @@ out	40h,AL
 mov	al,00h
 out	40h,AL
 iret
-tim: 
+tim:
 cmp si,1
 jnz tt
 mov dx,402h
@@ -57,4 +57,8 @@ mov	al,90h
 out	40h,AL
 mov	al,01h
 out	40h,AL
-tt:iret
+jmp tt1
+tt:mov dx,402h
+mov al,00h
+out dx,al 
+tt1:iret
